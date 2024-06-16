@@ -1,0 +1,28 @@
+{
+    "modelId": "amazon.titan-text-premier-v1:0",
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "text": "Below provided are some meeting notes. Read through the notes, understand key take aways and summarize the meeting notes. \nFollow below instructions when responding:\n\nModel Instructions:\n- You MUST Keep the response to less than 50 words. \n- DO NOT make up or hallucinate any other information apart from the information given below. \n- I am the head of the department and only want to know key updates relevent to me, please hide any extra details which I may not care about. Please be brief and concise in your summary. \n- Structure the summary for each project in 2 bullet points:\n    - 1. Key Update: 1 line update on the project\n    - 2. Associated Owner & Next Steps : 1-2 line update on Next Steps and assigned owner.\n- Make sure that each next step for each project has 1 assigned owner. \n\n- Follow the below schema for each project in a bulleted list:\nProject Title: \n1. **Key Update**:\n2. **Associated Owner & Next Steps**:\n\n \nMeeting Notes:\nAttendees:  \nJane, Marketing Manager\nAmanda, Project Lead\n\nAgenda:\n\n1. Review progress on Project Tulip.\n2. Discuss upcoming sales and marketing strategies.\n3. Brainstorm ideas for team-building activities for upcoming offsite\n\nNotes:\n\n1. Project Tulip: Review progress on Project Tulip:\n\n- Both Jane and Amanda shared their progress on Project Tulip\n- Jane shared the completion of  Phase 1 milestones, particularly the integration of the new module and completion of the Phase 1 code components\n- Amanda provided insights into beta customer feedback and shared the importance of meeting deadlines for Phase 2 deliverables.\n- Next Step: Jane to coordinate with the development team to address any outstanding issues before the next customer presentation, Amanda to schedule the demo and do more customer reach outs to gain better understanding of the use cases\n\n2. Marketing Campaign: Discuss upcoming sales and marketing strategies:\n\n- Jane presented the outline of the upcoming marketing campaign, emphasizing the importance of targeted social media ads and influencer partnerships. Jane also asked for a budget increase by 20% for influencer marketing.\n- Amanda suggested she will be exploring innovative marketing tactics to increase brand visibility within our target demographic and due to budget constraints we may not be able to shell out another 20% budget increase but can check with the higher leadership on how much budget increase we can do for marketing\n- Next Step: Amanda to research potential marketing ideas and present them at the next meeting for further discussion. Amanda to also would touch base with leadership on budget increase request and come back to with the accepted increase if any.\n\n3. Offsite: Brainstorm ideas for team-building activities :\n\n- Both Jane and Amanda agreed on the significance of fostering a positive team culture through regular team-building activities and having some games to help increase collaboration and problem solving\n- Jane suggested to also include escape room games to foster cross team collaboration and problem solving and better thinking on the feet. \n- Amanda suggested we reach out to other folks on team for more ideas\n- Next Step: Jane to circulate a survey to the team to gauge interest and preferences for upcoming offsite.\n\nNow, summarize the meeting notes above, following the provided instructions above."
+          }
+        ]
+      }
+    ],
+    "inferenceConfig": {
+      "maxTokens": 512,
+      "stopSequences": [],
+      "temperature": 0.7,
+      "topP": 0.9
+    },
+    "additionalModelRequestFields": {}
+  }
+
+,{
+"modelId": "amazon.titan-text-lite-v1",
+"contentType": "application/json",
+"accept": "application/json",
+"body": "{\"inputText\":\"this is where you place your input text\",\"textGenerationConfig\":{\"maxTokenCount\":4096,\"stopSequences\":[],\"temperature\":0,\"topP\":1}}"
+}
+  
